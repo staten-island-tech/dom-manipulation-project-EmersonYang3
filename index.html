@@ -1,15 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cat Profiles (Addition Mode)</title>
-  <link rel="stylesheet" href="style.css"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="gallery">
+    <div class="container">
+        <h1>To-Do List</h1>
+        <form id="todoForm">
+            <label for="todoTitle">To-Do Title:</label>
+            <input type="text" id="todoTitle" name="todoTitle" required>
+            
+            <label for="todoDescription">To-Do Description:</label>
+            <textarea id="todoDescription" name="todoDescription" rows="4" cols="50" required></textarea>
+            
+            <label for="todoImage">Upload Image:</label>
+            <input type="file" id="todoImage" name="todoImage" accept="image/*" required>
+            
+            <button type="submit">Add To-Do</button>
+        </form>
+    </div>
 
-  </div>
-  
+    <div id="todoList" class="gallery">
+        <!-- To-Do items will be displayed here -->
+    </div>
+
+    <script src="index.js"></script>
 </body>
 </html>
